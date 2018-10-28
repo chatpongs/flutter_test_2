@@ -25,9 +25,14 @@ class ImageCard extends StatelessWidget {
                 Text(
                   title,
                   style: Theme.of(context).textTheme.title,
+                  overflow: TextOverflow.ellipsis,
                 ),
                 Divider(),
-                Text(content),
+                Text(
+                  content,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 2,
+                ),
                 ButtonBar(
                   children: <Widget>[
                     RaisedButton(
