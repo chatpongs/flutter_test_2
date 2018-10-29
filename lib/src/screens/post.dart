@@ -27,9 +27,24 @@ class _PostState extends State<Post> {
           return SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                Image.asset(
-                  'assets/images/placeholder.png',
-                  fit: BoxFit.fitWidth,
+                Stack(
+                  overflow: Overflow.visible,
+                  children: <Widget>[
+                    Image.asset(
+                      'assets/images/placeholder.png',
+                      fit: BoxFit.fitWidth,
+                    ),
+                    Positioned(
+                      bottom: 20.0,
+                      right: 20.0,
+                      child: Opacity(
+                        opacity: 0.5,
+                        child: FlutterLogo(
+                          size: 50.0,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 SizedBox(
                   height: 20.0,
