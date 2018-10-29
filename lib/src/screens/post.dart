@@ -35,6 +35,18 @@ class _PostState extends State<Post> {
                       fit: BoxFit.fitWidth,
                     ),
                     Positioned(
+                      bottom: 0.0,
+                      left: 0.0,
+                      right: 0.0,
+                      top: 0.0,
+                      child: Opacity(
+                        opacity: 0.3,
+                        child: Container(
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ),
+                    ),
+                    Positioned(
                       bottom: 20.0,
                       right: 20.0,
                       child: Opacity(
